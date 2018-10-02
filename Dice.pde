@@ -1,11 +1,13 @@
 int totalDots=0;
 void setup()
 {
+  background(255);
   noLoop();
   size(300,300);
 }
 void draw()
 {
+  background(255);
   for(int y=25;y<=250;y+=50){
     for(int x=25;x<=250;x+=50){
         Die bob = new Die(x,y);
@@ -13,6 +15,7 @@ void draw()
     }
   }
   text("You rolled: " + totalDots,110,300);
+  totalDots=0;
 }
 void mousePressed()
 {
